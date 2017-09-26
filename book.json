@@ -1,0 +1,28 @@
+{
+    "styles": {
+        "website": "styles/website.css"
+     },
+    "plugins": ["search", "theme-api", "-sharing", "toggle-chapters", "scripts"],
+    "pluginsConfig": {
+        "theme-api": {
+            "theme": "dark",
+            "languages": [
+                {
+                    "lang": "js",
+                    "name": "JavaScript",
+                    "default": true
+                },
+                {
+                    "lang": "go",
+                    "name": "Go"
+                }
+            ],
+            "split": true
+        },
+        "scripts": {
+            "files": [
+                "./scripts/website.js"
+            ]
+        }
+    }
+}
