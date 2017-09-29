@@ -1,12 +1,18 @@
 body, .book.font-family-1 {
     font-family: "Open Sans",Whitney SSm A,Whitney SSm B,Helvetica,Arial,sans-serif;
 }
-.book.color-theme-3 .book-header {
+.book.color-theme-3, .book.color-theme-3 .book-header {
     background: #364150;
 }
 .book-header, .book-header h1, .book-header .btn {
     height: 40px;
     line-height: 40px;
+}
+.book-header .pull-left.js-toolbar-action{
+    display: none;
+}
+.book-header .pull-left.js-toolbar-action:first-child {
+    display: initial;
 }
 .book-summary ul.summary > li:last-child {
     display: none;
@@ -17,6 +23,7 @@ body, .book.font-family-1 {
 .book-summary {
     margin-top: 40px;
     font-family: inherit;
+    background-color: #fff;
 }
 .book.with-summary::before {
     height: 40px;
@@ -25,6 +32,9 @@ body, .book.font-family-1 {
     content: url(https://cdn.formelo.com/20160905/01/1473038591623-logo_398x100_lightbg@2x.png?width=120);
     margin-left: 10px;
     cursor: pointer;
+}
+.book.with-summary.color-theme-3::before {
+    content: url(https://cdn.formelo.com/20170927/17/1506534929360-logo-398x100-darkbg-2x.png?width=120) !important;
 }
 .book-summary ul.summary {
     margin: 0px 5px;
@@ -66,10 +76,13 @@ body, .book.font-family-1 {
     margin: 0px -30px;
     border-top: 1px solid #f0f4f7;
 }
+.book.two-columns .api-method {
+    display: flex;
+    flex-direction: row;
+}
 .book.two-columns .api-method .api-method-code {
     border-top: 1px solid #364150;
     margin-top: -1px;
-    height: -webkit-fill-available;
 }
 .book.color-theme-3 .book-body section .api-method-code {
     color: #EEE;
@@ -77,6 +90,32 @@ body, .book.font-family-1 {
 }
 .book.color-theme-3 .book-body section .api-method-code code, .book.color-theme-3 .book-body section .api-method-code pre {
     background-color: #364150;
+}
+.markdown-section table tr, .markdown-section table th, .markdown-section table td {
+    border: none;
+    font-size: 0.95em;
+    vertical-align: top;
+}
+.markdown-section table thead tr {
+	border-bottom: 1px solid #e6ebf1;
+}
+.markdown-section table th {
+    color: #939da3;
+    text-transform: uppercase;
+    font-size: 0.8em !important;
+}
+.markdown-section table td:first-child {
+    font-weight: 600;
+}
+.markdown-section table tr:nth-child(2n) {
+    background-color: inherit;
+}
+.markdown-section table tbody tr {
+    border-top: 1px solid #f0f9f1;
+}
+.markdown-section table td code {
+    color: #555;
+    font-weight: initial;
 }
 .markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6 {
     font-weight: 200;
@@ -98,6 +137,21 @@ body, .book.font-family-1 {
 }
 .markdown-section h6 {
     font-size: 1em;
+}
+o {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    opacity: 0.5 !important;
+    font-weight: initial;
+}
+r > code {
+	color: #d35400 !important;
+}
+.sunlight-code-container > .sunlight-highlighted {
+    white-space: inherit;
+}
+.sunlight-theme-dark .sunlight-string, .sunlight-theme-dark .sunlight-char, .sunlight-theme-dark .sunlight-heredoc, .sunlight-theme-dark .sunlight-heredocDeclaration, .sunlight-theme-dark .sunlight-nowdoc, .sunlight-theme-dark .sunlight-longString, .sunlight-theme-dark .sunlight-rawString, .sunlight-theme-dark .sunlight-binaryString, .sunlight-theme-dark .sunlight-verbatimString, .sunlight-theme-dark .sunlight-rawLongString, .sunlight-theme-dark .sunlight-binaryLongString, .sunlight-theme-dark .sunlight-diff .sunlight-added, .sunlight-theme-dark .sunlight-scala .sunlight-symbolLiteral {
+    color: #c1ef65 !important;
 }
 @font-face {
   font-family: 'Open Sans';

@@ -2,7 +2,8 @@
     "styles": {
         "website": "styles/website.css"
      },
-    "plugins": ["search", "theme-api", "-sharing", "toggle-chapters", "scripts"],
+    "plugins": ["search", "theme-api", "-sharing", "toggle-chapters", "scripts",
+                "-highlight", "sunlight-highlighter"],
     "pluginsConfig": {
         "theme-api": {
             "theme": "dark",
@@ -15,6 +16,10 @@
                 {
                     "lang": "go",
                     "name": "Go"
+                },
+                {
+                    "lang": "http",
+                    "name": "curl"
                 }
             ],
             "split": true
@@ -23,6 +28,10 @@
             "files": [
                 "./scripts/website.js"
             ]
+        },
+        "sunlight-highlighter": {
+            "theme": "dark",
+            "lineNumbers": false
         }
     }
 }
