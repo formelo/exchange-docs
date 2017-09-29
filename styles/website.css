@@ -8,9 +8,6 @@ body, .book.font-family-1 {
     height: 40px;
     line-height: 40px;
 }
-.book-header .pull-left.js-toolbar-action{
-    display: none;
-}
 .book-header .pull-left.js-toolbar-action:first-child {
     display: initial;
 }
@@ -44,6 +41,18 @@ body, .book.font-family-1 {
 }
 .book-summary ul.summary li a, .book-summary ul.summary li span {
     padding: 5px 15px;
+}
+.book-summary ul.summary li a[href^="http"]::after {
+    background: url(/img/icons/icon-external-link.svg);
+    content: ' ';
+    position: absolute;
+    top: 10px;
+    right: 4px;
+    width: 16px;
+    height: 12px;
+    background-size: 100% 48px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 @media (max-width: 600px) {
     .book.with-summary .book-body {

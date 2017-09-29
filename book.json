@@ -2,7 +2,7 @@
     "styles": {
         "website": "styles/website.css"
      },
-    "plugins": ["search", "theme-api", "-sharing", "toggle-chapters", "scripts",
+    "plugins": ["search", "theme-default", "toggle-chapters", "scripts",
                 "-highlight", "sunlight-highlighter"],
     "pluginsConfig": {
         "theme-api": {
